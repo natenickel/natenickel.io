@@ -1,0 +1,156 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Syncopate', sans-serif; 
+background-color: #f8cb74;
+
+  color: #000; /* Black */
+}
+
+/* Global styles */
+
+
+
+.landing-page {
+  text-align: center;
+  padding: 0; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+.landing-page h1 {
+  font-size: 150px; 
+  font-weight: bold; 
+  font-family: 'Syncopate', sans-serif; /* Use the "Syncopate" font */
+  color: #000; 
+  margin-bottom: 20px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent; 
+  border-top: 40px solid rgb(61, 46, 46);
+  transform: rotate(0deg); 
+  position: absolute;
+  bottom: 10px; 
+  left: 50%;
+  margin-left: -40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: bounce 1s infinite; 
+}
+
+.directory {
+  width: 100%;
+  height: 100vh;
+  background-color: #432019; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%); /* Initially hidden below */
+  transition: transform 0.3s ease; 
+}
+
+
+
+/* Add styles for the "Directory" button */
+#directory-button {
+  background-color: #f8cb74;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent; 
+  border-right: 40px solid transparent; 
+  border-top: 40px solid rgb(61, 46, 46); 
+  transform: rotate(0deg); 
+  position: absolute;
+  bottom: 10px; 
+  left: 50%;
+  margin-left: -40px; 
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: bounce 1s infinite; 
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+
+
+}
+p{
+
+    position: absolute; 
+    top: 150px;
+    left: 350px;
+    font-size: 50px;
+}
+h2{
+  position:relative;
+  bottom: -90px;
+  font-weight: bolder;
+}
+
+
+
+
+.video-container.show-video {
+  display: block; 
+}
+
+.video-container {
+  display: none; 
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 80%;
+  height: 80%;
+}
+/* Navigation bar styles */
+.navbar {
+  background-color: #f8cb74; 
+  height: 30px; 
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Link styles */
+.navbar a {
+  text-decoration: none;
+  color: #432019; 
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+/* Adjust the color when hovering over links */
+.navbar a:hover {
+  color: #000; 
+}

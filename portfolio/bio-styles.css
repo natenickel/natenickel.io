@@ -1,0 +1,63 @@
+/* Styles for the bio page */
+body {
+    font-family: 'Syncopate', sans-serif; /* Use the "Syncopate" font */
+    background-color: #f8cb74; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .navbar {
+    background-color: #c98b41;
+    height: 30px;
+    border-bottom: 2px solid #8c675a; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #432019; 
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+  
+  .navbar a:hover {
+    color: #000; 
+  }
+  
+  h1 {
+    font-family: 'Syncopate', sans-serif; /* Use the "Syncopate" font */
+    font-size: 24px;
+    font-weight: bold;
+    color: #432019; 
+    margin: 20px;
+  }
+  
+  p.bio-content {
+    font-size: 16px;
+    color: #000; 
+    margin: 10px 0;
+  }
+  
+
+  
+  a.bio-link {
+    text-decoration: none;
+    color: #0077B5; 
+  }
+  
+  a.bio-link:hover {
+    color: #00457C; 
+  }
+  
+  /* Bio-specific styles */
+
+  .bio-content {
+    font-weight: bolder;
+    margin: 20px;
+    font-size: 100px;
+  }
+  
+  

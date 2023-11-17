@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="landing-page">
+        <h1 style="font-family: 'Syncopate', sans-serif;">Nathan Nickel</h1>
+        <p style="font-family: 'Syncopate', sans-serif;">hi i'm</p>
+        <h2 style="font-family: 'Syncopate', sans-serif;"> enter</h2>
+        <div class="arrow" onclick="toggleDirectory()"></div>
+    </div>
+
+    <div class="directory">
+        <nav class="navbar">
+            <a href="projects.html" style="font-family: 'Syncopate'sans-serif;">Projects</a>
+            <a href="index.html" style="font-family: 'Syncopate', sans-serif;">Directory</a>
+            <a href="Bio.html"style="font-family: 'Syncopate', sans-serif;"> Bio</a>
+        </nav>
+        
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/60CdQ5TQm2E" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+    </div>
+
+
+       <script>
+        let isDirectoryVisible = false;
+
+        function toggleDirectory() {
+            const directory = document.querySelector('.directory');
+            const arrow = document.querySelector('.arrow');
+
+            if (isDirectoryVisible) {
+                directory.style.transform = 'translateY(100%)';
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                directory.style.transform = 'translateY(0)';
+                arrow.style.transform = 'rotate(180deg)';
+            }
+
+            isDirectoryVisible = !isDirectoryVisible;
+        }
+    </script>
+    
+</body>
+</html>

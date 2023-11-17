@@ -1,0 +1,75 @@
+/* Reset some default browser styles */
+html, body, h1, h2, h3, p, ul, li, a, nav, .container {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Syncopate', sans-serif;
+    color: #000; 
+    background-color: #f8cb74; 
+}
+body{
+    margin: 0 !important;
+    background-color: #f8cb74 !important;
+
+}
+html{background-color: #f8cb74 !important;}
+
+/* Styles for the navigation bar */
+.navbar {
+    background-color: #f1ba4a; 
+    height: 40px;
+    border-bottom: 2px solid #c98b41; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #432019; 
+    font-weight: bold;
+    padding: 0;
+}
+
+.navbar a:hover {
+    color: #000; 
+}
+
+/* Styles for the projects page */
+.container {
+    padding: 0px;
+    margin: 0px;
+    background-color: #f8cb74; 
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #432019; 
+    margin: 20px 0;
+}
+
+/* Target Bootstrap cards with higher specificity */
+.card.bg-card {
+    background-color:  #c98b41!important;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #432019; 
+}
+
+.card-text {
+    color: #000; 
+    background-color: #c98b41;
+}
+
+.btn-primary {
+    background-color: brown!important;outline: #432019;
+    border: none !important;
+    color: #f8cb74 !important;
+}
+
+.btn-primary:hover {
+    background-color: #432019;
+    color: #fff;}
